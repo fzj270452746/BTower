@@ -1,0 +1,6 @@
+framework module Pods_BTower {
+  umbrella header "Pods-BTower-umbrella.h"
+
+  export *
+  module * { export * }
+}
