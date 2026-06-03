@@ -10,16 +10,16 @@
 		28D2D52D2FD0917A00EC7205 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D2D52C2FD0917900EC7205 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		28D2D52F2FD0917E00EC7205 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D2D52E2FD0917E00EC7205 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		38AA0001000000000000A001 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 38AA0001000000000000A002 /* SnapKit */; };
-		CA180396BBB0B334B7E7BFDD /* Pods_BTower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4256ECBC087B0CA5A6F33184 /* Pods_BTower.framework */; };
+		73AD61BAB16E761C8A9F5ABA /* Pods_BTower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AF896D25F36F2BE5C252E9 /* Pods_BTower.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28D2D52C2FD0917900EC7205 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		28D2D52E2FD0917E00EC7205 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		3844BCD385714D8A6483BCF5 /* Pods-BTower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTower.debug.xcconfig"; path = "Target Support Files/Pods-BTower/Pods-BTower.debug.xcconfig"; sourceTree = "<group>"; };
 		385A35D32FCF7B4300082085 /* BTower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTower.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4256ECBC087B0CA5A6F33184 /* Pods_BTower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51A83CA85CCE02669C646E5A /* Pods-BTower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTower.release.xcconfig"; path = "Target Support Files/Pods-BTower/Pods-BTower.release.xcconfig"; sourceTree = "<group>"; };
-		62345CAA75DFE2D7A0E08002 /* Pods-BTower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTower.debug.xcconfig"; path = "Target Support Files/Pods-BTower/Pods-BTower.debug.xcconfig"; sourceTree = "<group>"; };
+		3D91FEBF9AEDA7D2DC1BD970 /* Pods-BTower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTower.release.xcconfig"; path = "Target Support Files/Pods-BTower/Pods-BTower.release.xcconfig"; sourceTree = "<group>"; };
+		A0AF896D25F36F2BE5C252E9 /* Pods_BTower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -51,20 +51,30 @@
 				28D2D52F2FD0917E00EC7205 /* AdServices.framework in Frameworks */,
 				28D2D52D2FD0917A00EC7205 /* AdSupport.framework in Frameworks */,
 				38AA0001000000000000A001 /* SnapKit in Frameworks */,
-				CA180396BBB0B334B7E7BFDD /* Pods_BTower.framework in Frameworks */,
+				73AD61BAB16E761C8A9F5ABA /* Pods_BTower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		059FAC831751BBF916B581F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3844BCD385714D8A6483BCF5 /* Pods-BTower.debug.xcconfig */,
+				3D91FEBF9AEDA7D2DC1BD970 /* Pods-BTower.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		385A35CA2FCF7B4300082085 = {
 			isa = PBXGroup;
 			children = (
 				385A35D52FCF7B4300082085 /* BTower */,
 				385A35D42FCF7B4300082085 /* Products */,
-				71731EB3DD6176C7D0C6AE99 /* Pods */,
 				8A900FCB50B4CEDE7C6A44C1 /* Frameworks */,
+				059FAC831751BBF916B581F9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,21 +86,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		71731EB3DD6176C7D0C6AE99 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				62345CAA75DFE2D7A0E08002 /* Pods-BTower.debug.xcconfig */,
-				51A83CA85CCE02669C646E5A /* Pods-BTower.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		8A900FCB50B4CEDE7C6A44C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				28D2D52E2FD0917E00EC7205 /* AdServices.framework */,
 				28D2D52C2FD0917900EC7205 /* AdSupport.framework */,
-				4256ECBC087B0CA5A6F33184 /* Pods_BTower.framework */,
+				A0AF896D25F36F2BE5C252E9 /* Pods_BTower.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,11 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385A35E62FCF7B4500082085 /* Build configuration list for PBXNativeTarget "BTower" */;
 			buildPhases = (
-				471A5DFDD597589609E97090 /* [CP] Check Pods Manifest.lock */,
+				8AA2C3181A7EDA581D8CBBBD /* [CP] Check Pods Manifest.lock */,
 				385A35CF2FCF7B4300082085 /* Sources */,
 				385A35D02FCF7B4300082085 /* Frameworks */,
 				385A35D12FCF7B4300082085 /* Resources */,
-				A217E3040C5E4303E3C746FC /* [CP] Embed Pods Frameworks */,
+				A3C0B5FE94A88D8F28E33D97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,7 +172,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		471A5DFDD597589609E97090 /* [CP] Check Pods Manifest.lock */ = {
+		8AA2C3181A7EDA581D8CBBBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,7 +194,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A217E3040C5E4303E3C746FC /* [CP] Embed Pods Frameworks */ = {
+		A3C0B5FE94A88D8F28E33D97 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,13 +202,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BTower/Pods-BTower-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BTower/Pods-BTower-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,7 +226,7 @@
 /* Begin XCBuildConfiguration section */
 		385A35E72FCF7B4500082085 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62345CAA75DFE2D7A0E08002 /* Pods-BTower.debug.xcconfig */;
+			baseConfigurationReference = 3844BCD385714D8A6483BCF5 /* Pods-BTower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -266,7 +263,7 @@
 		};
 		385A35E82FCF7B4500082085 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51A83CA85CCE02669C646E5A /* Pods-BTower.release.xcconfig */;
+			baseConfigurationReference = 3D91FEBF9AEDA7D2DC1BD970 /* Pods-BTower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
